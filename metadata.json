@@ -1,0 +1,12 @@
+{
+  "name": "puppetfinland-selinux",
+  "version": "0.1.0",
+  "author": "Puppet-Finland team",
+  "license": "BSD license",
+  "summary": "Setup selinux",
+  "source": "https://github.com/Puppet-Finland/selinux.git",
+  "project_page": "https://github.com/Puppet-Finland/selinux",
+  "dependencies": [
+    { "name": "puppetfinland/os", "version_requirement": ">= 0.5.7" }
+  ]
+}
