@@ -5,7 +5,6 @@ A Puppet module for managing selinux
 # Module usage
 
 * [Class: selinux](manifests/init.pp)
-* [Define: selinux::boolean](manifests/boolean.pp)
 
 # Dependencies
 
