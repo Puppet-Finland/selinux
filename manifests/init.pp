@@ -5,6 +5,8 @@
 #
 # == Parameters
 #
+# [*manage*]
+#   Manage selinux with Puppet. Valid values are true (default) and false.
 # None at the moment.
 #
 # == Authors
@@ -17,12 +19,12 @@
 #
 class selinux
 (
-    $manage = 'yes',
+    $manage = true,
 
 ) inherits selinux::params
 {
 
-if $manage == 'yes' {
-    # Do something
+if $manage {
+    include ::selinux::install
 }
 }
