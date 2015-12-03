@@ -51,6 +51,7 @@ define selinux::module
         group   => 'root',
         mode    => '0644',
         require => Class['::selinux'],
+        notify  => Selmodule["selinux-module-${basename}"],
     }
 
     selmodule { "selinux-module-${basename}":
